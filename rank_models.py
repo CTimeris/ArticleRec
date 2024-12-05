@@ -301,7 +301,7 @@ def get_din_feats_columns(df, dense_fea, sparse_fea, behavior_fea, his_behavior_
 
     var_feature_columns = [VarLenSparseFeat(SparseFeat(feat, vocabulary_size=df['click_article_id'].nunique() + 1,
                                                        embedding_dim=emb_dim, embedding_name='click_article_id'),
-                                            maxlen=max_len) for feat in hist_behavior_fea]
+                                            maxlen=max_len) for feat in his_behavior_fea]
 
     dnn_feature_columns = sparse_feature_columns + dense_feature_columns + var_feature_columns
 
