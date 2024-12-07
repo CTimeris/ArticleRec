@@ -1,6 +1,16 @@
 # ArticleRec
 一个文章推荐系统，包括召回和排序。
 
+召回包括：ItemCF、UserCF、Item2vec、YoutubeDNN
+
+排序：LGBMRanker、LGBMClassifier、DIN
+
+数据集主要包含：
+
+用户点击文章的记录（userid、itemid、时间戳、国家、城市、设备环境...）
+
+文章的数据（文章id、文章创建时间、文章类别、文章字数、文章embedding表示...）
+
 github无法上传大于25M的文件，所以数据集需要下载：
 
 新建data目录：将数据集下载到该目录下，地址：https://tianchi.aliyun.com/competition/entrance/531842/information
