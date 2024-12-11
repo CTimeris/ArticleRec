@@ -108,4 +108,4 @@ user_multi_recall_dict['youtubednn_recall'] = pickle.load(open(save_path + 'yout
 
 
 # 最终合并之后每个用户召回150个商品进行排序
-final_recall_items_dict_rank = combine_recall_results(user_multi_recall_dict, weight_dict, topk=150)
+final_recall_items_dict_rank = combine_recall_results(user_multi_recall_dict, weight_dict, topk=50)
